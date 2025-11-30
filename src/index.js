@@ -8,7 +8,7 @@ app.use(express.json());
 // **************************************************************
 // Put your implementation here
 // If necessary to add imports, please do so in the section above
-const { v4: uuidv4 } = require('uuid');
+const uuidv4 = () => Math.random().toString(36).substring(2, 10);
 
 let users = [];
 
